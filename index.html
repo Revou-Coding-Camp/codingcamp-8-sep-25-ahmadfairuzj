@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="jempol.jpg" alt="jempol" class="logo">
+        <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#portofolio">Portofolio</a></li>
+            <li><a class="nav-link" href="#message">Message Us</a></li>
+            <li><a class="nav-link" href="#our-profile">Our Profile</a></li>
+
+        </ul>
+    </nav>
+
+    <hr>
+
+    <section id="home" class="home">
+        <h1><span id="welcomeName">Welcome</span> </h1>
+    </section>
+
+    <hr>
+
+    <section id="our-profile" class="our-profile">
+        <h2>Our Profile</h2>
+        <p>Nama: Ahmad Fairuz Jamil</p>
+        <p>Email: ahmadfairuzj@gmail.com</p>
+        <p>Saat ini bersekolah di Smk Cibitung 1 dengan jurusan Pengembangan Perangkat Lunak Dan Gim</p>
+    </section>
+
+    <hr>
+
+    <section id="portofolio" class="portofolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio-list">
+            <div class="portfolio-item">
+                <h3>Website catatan Sederhana</h3>
+                <p>Membuat website catatan dengan HTML, CSS, JavaScript, dan database mysql. Fitur: tambah catatan,
+                    hapus catatan, list catatan dengan tanggal</p>
+
+            </div>
+            <div class="portfolio-item">
+                <h3>Aplikasi Kasir Sederhana</h3>
+                <p>Membuat aplikasi kasir sederhana dengan HTML, CSS, JavaScript, dan database mysql. Fitur: tambah
+                    produk, hapus produk, list produk dengan harga</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="message" class="messageForm">
+        <h2>Message Us</h2>
+        <form class="form" id="messageForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <br />
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+            <br />
+            <div class="jenis_kelamin">
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required>
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required>
+                <label for="perempuan">Perempuan</label>
+            </div>
+            <br />
+            <label for="pesan">pesan:</label>
+            <textarea id="pesan" name="pesan" required></textarea>
+            <br />
+            <button type="submit">kirim</button>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
